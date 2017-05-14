@@ -925,4 +925,9 @@ html, body {
   font-family: "Open Sans", sans-serif;
   color: #1a1a1a; }
 
+.container, .container-fluid {
+  max-width: 102.4rem;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*# sourceMappingURL=app.css.map */
