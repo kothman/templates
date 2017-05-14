@@ -37,10 +37,21 @@ header {
 				max-width: 7rem;
 				display: block;
 				margin-left: auto;
-				border-bottom: 1px solid $line-color;
+
 				a {
 					color: $secondary-font-color;
 					text-decoration: none;
+				}
+
+				position: relative;
+				&::after {
+				    content: '';
+				    width: 2.5rem;
+				    border-bottom: 1px solid #d9d9d9;
+				    height: 1px;
+				    position: absolute;
+				    bottom: 0;
+				    right: 0;
 				}
 			}
 		}
