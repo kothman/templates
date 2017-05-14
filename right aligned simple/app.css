@@ -861,7 +861,7 @@ there.
   display: inline-block; }
 
 .triangle-container {
-  max-width: 35rem;
+  max-width: 30rem;
   width: 100%;
   margin-right: 0;
   margin-left: auto; }
@@ -875,7 +875,7 @@ there.
       margin-left: auto;
       width: 0;
       height: 0;
-      padding-right: 25rem;
+      padding-right: 30rem;
       padding-top: 3rem;
       overflow: hidden;
       position: relative; }
@@ -898,22 +898,34 @@ there.
 header {
   overflow: hidden; }
   header .row {
-    padding: 1rem 1rem 0 1rem; }
+    padding-right: 1rem; }
+    @media (min-width: 550px) {
+      header .row {
+        padding-right: 0; } }
   header .title {
+    padding-top: .5rem;
+    margin-bottom: 0;
     font-family: "Georgia", serif; }
+    @media (min-width: 550px) {
+      header .title {
+        padding-top: 1.5rem;
+        margin-bottom: 1rem; } }
     header .title ~ .subtitle {
       margin-top: -2rem;
       margin-bottom: 1rem;
       text-align: right; }
   header .main {
-    max-width: 35rem;
+    max-width: 30rem;
     text-align: right;
     margin-left: auto; }
   header .menu {
     text-align: right;
-    padding-right: 1rem;
-    max-width: 35rem;
+    max-width: 30rem;
     margin-left: auto; }
+    @media (min-width: 550px) {
+      header .menu {
+        padding-right: 2rem;
+        padding-top: 1rem; } }
     header .menu ul {
       list-style: none;
       text-align: inherit; }
@@ -922,6 +934,7 @@ header {
         max-width: 7rem;
         display: block;
         margin-left: auto;
+        margin-bottom: 0;
         position: relative; }
         header .menu ul li a {
           color: #1eaedb;
@@ -946,7 +959,7 @@ html, body {
   color: #1a1a1a; }
 
 .container, .container-fluid {
-  max-width: 102.4rem;
+  max-width: 80rem;
   margin-left: auto;
   margin-right: auto; }
 

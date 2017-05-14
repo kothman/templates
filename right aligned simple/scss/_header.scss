@@ -2,7 +2,10 @@ header {
 	//border-bottom: 1px solid $line-color;
 	overflow: hidden;
 	.row {
-		padding: 1rem 1rem 0 1rem;
+		padding-right: 1rem;
+		@media (min-width: $breakpoint) {
+			padding-right: 0;
+		}
 
 	}
 
@@ -10,6 +13,13 @@ header {
 	}
 
 	.title {
+		padding-top: .5rem;
+		margin-bottom: 0;
+		@media (min-width: $breakpoint) {
+			padding-top: 1.5rem;
+			margin-bottom: 1rem;
+		}
+
 		font-family: $header-font;
 		~ .subtitle {
 			margin-top: -1 * $header-vertical-margin;
@@ -19,15 +29,19 @@ header {
 	}
 
 	.main {
-		max-width: 35rem;
+		max-width: 30rem;
 		text-align: right;
 		margin-left: auto;
 	}
 
 	.menu {
 		text-align: right;
-		padding-right: 1rem;
-		max-width: 35rem;
+
+		@media (min-width: $breakpoint) {
+			padding-right: 2rem;
+			padding-top: 1rem;
+		}
+		max-width: 30rem;
 		margin-left: auto;
 		ul {
 			list-style: none;
@@ -37,6 +51,7 @@ header {
 				max-width: 7rem;
 				display: block;
 				margin-left: auto;
+				margin-bottom: 0;
 
 				a {
 					color: $secondary-font-color;
@@ -57,7 +72,7 @@ header {
 		}
 	}
 
-	@media (min-width: 550px) {
+	@media (min-width: $breakpoint) {
 		.main, .menu {
 			margin-right: auto;
 			margin-left: 0;

@@ -13,6 +13,9 @@ $line-color: darken(white, 15);
 
 $header-vertical-margin: 2rem;
 
+$breakpoint: 550px;
+$screen-size: 80rem;
+
 @import 'scss/helpers';
 @import 'scss/header';
 
@@ -23,7 +26,7 @@ html, body {
 }
 
 .container, .container-fluid {
-	max-width: 102.4rem;
+	max-width: $screen-size;
 	margin-left: auto;
 	margin-right: auto;
 
