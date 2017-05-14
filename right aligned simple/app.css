@@ -860,29 +860,40 @@ there.
   width: auto;
   display: inline-block; }
 
-.triangle.up-left {
-  margin-left: auto;
-  width: 0;
-  height: 0;
-  padding-right: 35rem;
-  padding-top: 3rem;
-  overflow: hidden;
-  position: relative; }
+.triangle-container {
+  max-width: 35rem;
+  width: 100%;
+  margin-right: 0;
+  margin-left: auto; }
   @media (min-width: 550px) {
-    .triangle.up-left {
-      margin-right: auto;
-      margin-left: 0; } }
-  .triangle.up-left::after {
-    position: relative;
-    top: 0;
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    margin-right: -50rem;
-    margin-top: -50rem;
-    border-right: 1000rem solid transparent;
-    border-top: 50rem solid rgba(30, 174, 219, 0.4); }
+    .triangle-container {
+      margin-left: 0;
+      margin-right: auto; } }
+  .triangle-container .triangle {
+    margin-left: auto; }
+    .triangle-container .triangle.up-left {
+      margin-left: auto;
+      width: 0;
+      height: 0;
+      padding-right: 25rem;
+      padding-top: 3rem;
+      overflow: hidden;
+      position: relative; }
+      @media (min-width: 550px) {
+        .triangle-container .triangle.up-left {
+          margin-right: 0;
+          margin-left: auto; } }
+      .triangle-container .triangle.up-left::after {
+        position: relative;
+        top: 0;
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        margin-right: -50rem;
+        margin-top: -50rem;
+        border-right: 1000rem solid transparent;
+        border-top: 50rem solid rgba(30, 174, 219, 0.4); }
 
 header {
   overflow: hidden; }

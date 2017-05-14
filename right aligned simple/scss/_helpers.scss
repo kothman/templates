@@ -3,7 +3,7 @@ $triangle-color: $secondary-font-color-faded;
 @mixin triangle {
 	width: 0;
     height: 0;
-    padding-right: 35rem;
+    padding-right: 25rem;
     padding-top: 3rem;
     overflow: hidden;
     position: relative;
@@ -29,13 +29,27 @@ $triangle-color: $secondary-font-color-faded;
 	display: inline-block;
 }
 
-.triangle {
-	&.up-left {
-		margin-left: auto;
-		@media (min-width: 550px) {
-			margin-right: auto;
-			margin-left: 0;
-		}
-		@include triangle
+.triangle-container {
+	max-width: 35rem;
+	width: 100%;
+	margin-right: 0;
+	margin-left: auto;
+
+	@media (min-width: 550px) {
+		margin-left: 0;
+		margin-right: auto;
 	}
+
+	.triangle {
+		margin-left: auto;
+		&.up-left {
+			margin-left: auto;
+			@media (min-width: 550px) {
+				margin-right: 0;
+				margin-left: auto;
+			}
+			@include triangle
+		}
+	}
+
 }
