@@ -1,0 +1,23 @@
+@import 'scss/normalize';
+@import 'scss/skeleton';
+
+$header-font: 'Georgia', serif;
+$primary-font: 'Open Sans', sans-serif;
+
+$primary-background-color: white;
+$secondary-background-color: #663399;
+$primary-font-color: darken(white, 90);
+$secondary-font-color: rgba(30, 174, 219, 1);
+$secondary-font-color-faded: rgba(30, 174, 219, .4);
+$line-color: darken(white, 15);
+
+$header-vertical-margin: 2rem;
+
+@import 'scss/helpers';
+@import 'scss/header';
+
+html, body {
+	background: $primary-background-color;
+	font-family: $primary-font;
+	color: $primary-font-color;
+}

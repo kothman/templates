@@ -1,0 +1,41 @@
+$triangle-color: $secondary-font-color-faded;
+
+@mixin triangle {
+	width: 0;
+    height: 0;
+    padding-right: 35rem;
+    padding-top: 3rem;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+		position: relative;
+		top: 0;
+		content: '';
+	    display: block;
+	    width: 0;
+	    height: 0;
+	    margin-right:-50rem;
+	    margin-top:-50rem;
+    
+    	border-right: 1000rem solid transparent;
+    	border-top: 50rem solid $triangle-color;
+    
+	}
+}
+
+.width-auto {
+	width: auto;
+	display: inline-block;
+}
+
+.triangle {
+	&.up-left {
+		margin-left: auto;
+		@media (min-width: 550px) {
+			margin-right: auto;
+			margin-left: 0;
+		}
+		@include triangle
+	}
+}
