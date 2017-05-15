@@ -58,9 +58,14 @@ header {
 			li {
 				width: auto;
 				max-width: 7rem;
-				display: block;
+				display: inline-block;
 				margin-left: auto;
 				margin-right: auto;
+				padding: 0 1rem;
+				@media (min-width: $breakpoint) {
+					padding: 0;
+					display: block;
+				}
 				a {
 					border-bottom: 1px solid $line-color;
 					display: block;
