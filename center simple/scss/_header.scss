@@ -36,6 +36,10 @@ header {
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: -.75rem;
+		@media (min-width: $breakpoint) {
+			margin-bottom: -2rem;
+		}
 	}
 
 	.menu {
@@ -70,9 +74,4 @@ header {
 		}
 	}
 
-	@media (min-width: $breakpoint) {
-		.main {
-			margin-bottom: -2rem;
-		}
-	}
 }

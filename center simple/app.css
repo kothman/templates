@@ -938,7 +938,11 @@ header {
     max-width: 35rem;
     text-align: center;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-bottom: -.75rem; }
+    @media (min-width: 550px) {
+      header .main {
+        margin-bottom: -2rem; } }
   header .menu {
     text-align: center;
     margin-left: auto;
@@ -965,9 +969,6 @@ header {
         header .menu ul li a {
           border-bottom: 1px solid #d9d9d9;
           display: block; }
-  @media (min-width: 550px) {
-    header .main {
-      margin-bottom: -2rem; } }
 
 .content p {
   margin-bottom: 2rem; }
