@@ -2,10 +2,6 @@ header {
 	//border-bottom: 1px solid $line-color;
 	overflow: hidden;
 	.row {
-		padding-right: 1rem;
-		@media (min-width: $breakpoint) {
-			padding-right: 0;
-		}
 
 	}
 
