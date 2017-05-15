@@ -1,0 +1,96 @@
+$triangle-color: $secondary-font-color-faded;
+
+@mixin triangle {
+	width: 0;
+    height: 0;
+    padding-right: $max-header-item-width;
+    padding-top: 3rem;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+		position: relative;
+		top: 0;
+		content: '';
+	    display: block;
+	    width: 0;
+	    height: 0;
+	    margin-right:-50rem;
+	    margin-top:-50rem;
+    
+    	border-right: 1000rem solid transparent;
+    	border-top: 50rem solid $triangle-color;
+    
+	}
+}
+
+@mixin transition($seconds, $type) {
+	 -webkit-transition: all $seconds $type;
+    -moz-transition: all $seconds $type;
+    -ms-transition: all $seconds $type;
+    -o-transition: all $seconds $type;
+    transition: all $seconds $type;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+
+.width-auto {
+	width: auto;
+	display: inline-block;
+}
+
+.triangle-container {
+	max-width: $max-header-item-width;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	.triangle {
+		&.up-left {
+			@include triangle
+		}
+	}
+
+}
+
+.vertical-padding {
+	width: 100%;
+
+	&.one {
+		padding-bottom: 1rem;
+	}
+	&.two {
+		padding-bottom: 2rem;
+	}
+	&.three {
+		padding-bottom: 3rem;
+	}
+	&.four {
+		padding-bottom: 4rem;
+	}
+	&.five {
+		padding-bottom: 5rem;
+	}
+	&.six {
+		padding-bottom: 6rem;
+	}
+	&.seven {
+		padding-bottom: 7rem;
+	}
+	&.eight {
+		padding-bottom: 8rem;
+	}
+	&.nine {
+		padding-bottom: 9rem;
+	}
+	&.ten {
+		padding-bottom: 10rem;
+	}
+}

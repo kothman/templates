@@ -1,0 +1,8 @@
+.container:not(header), .container-fluid:not(header) {
+	.content {
+		margin-top:2rem;
+		@media (min-width: $breakpoint) {
+			margin-top: 5rem;
+		}
+	}
+}

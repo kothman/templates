@@ -24,25 +24,34 @@ header {
 		~ .subtitle {
 			margin-top: -1 * $header-vertical-margin;
 			margin-bottom: $header-vertical-margin / 2;
-			text-align: right;
+			text-align: center;
+		}
+
+		a {
+			color: $primary-font-color;
+			&:hover {
+				color: lighten($primary-font-color, 20);
+			}
 		}
 	}
 
 	.main {
-		max-width: 30rem;
-		text-align: right;
+		max-width: $max-header-item-width;
+		text-align: center;
 		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.menu {
-		text-align: right;
-
 		@media (min-width: $breakpoint) {
-			padding-right: 2rem;
-			padding-top: 1rem;
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
 		}
-		max-width: 30rem;
+		
+		text-align: center;
 		margin-left: auto;
+		margin-right: auto;
 		ul {
 			list-style: none;
 			text-align: inherit;
@@ -51,31 +60,17 @@ header {
 				max-width: 7rem;
 				display: block;
 				margin-left: auto;
-				margin-bottom: 0;
-
+				margin-right: auto;
 				a {
-					color: $secondary-font-color;
-					text-decoration: none;
-				}
-
-				position: relative;
-				&::after {
-				    content: '';
-				    width: 2.5rem;
-				    border-bottom: 1px solid #d9d9d9;
-				    height: 1px;
-				    position: absolute;
-				    bottom: 0;
-				    right: 0;
+					border-bottom: 1px solid $line-color;
+					display: block;
 				}
 			}
 		}
 	}
 
 	@media (min-width: $breakpoint) {
-		.main, .menu {
-			margin-right: auto;
-			margin-left: 0;
+		.main {
 			margin-bottom: -2rem;
 		}
 	}

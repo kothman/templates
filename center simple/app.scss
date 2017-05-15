@@ -6,7 +6,7 @@ $primary-font: 'Open Sans', sans-serif;
 
 $primary-background-color: white;
 $secondary-background-color: #663399;
-$primary-font-color: darken(white, 90);
+$primary-font-color: darken(white, 80);
 $secondary-font-color: rgba(30, 174, 219, 1);
 $secondary-font-color-faded: rgba(30, 174, 219, .4);
 $line-color: darken(white, 15);
@@ -16,8 +16,11 @@ $header-vertical-margin: 2rem;
 $breakpoint: 550px;
 $screen-size: 80rem;
 
+$max-header-item-width: 35rem;
+
 @import 'scss/helpers';
 @import 'scss/header';
+@import 'scss/content';
 
 html, body {
 	background: $primary-background-color;
@@ -25,7 +28,18 @@ html, body {
 	color: $primary-font-color;
 }
 
+a {
+	color: $secondary-font-color;
+	text-decoration: none;
+	@include transition(0.2s, ease-in);
+	&:hover {
+		@include transition(0.2s, ease-in);
+		color: darken($secondary-font-color, 15);
+	}
+}
+
 .container, .container-fluid {
+	position: relative;
 	max-width: $screen-size;
 	margin-left: auto;
 	margin-right: auto;
