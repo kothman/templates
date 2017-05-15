@@ -969,11 +969,15 @@ header {
     header .main {
       margin-bottom: -2rem; } }
 
-.container:not(header) .content, .container-fluid:not(header) .content {
-  margin-top: 2rem; }
-  @media (min-width: 550px) {
-    .container:not(header) .content, .container-fluid:not(header) .content {
-      margin-top: 5rem; } }
+.content p {
+  margin-bottom: 2rem; }
+
+footer p {
+  margin-bottom: 0.25rem; }
+  footer p:first-child {
+    margin-top: 2rem; }
+  footer p:last-child {
+    margin-bottom: 4rem; }
 
 html, body {
   background: white;
@@ -995,6 +999,12 @@ a {
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     color: #157998; }
+
+p {
+  margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
 
 .container, .container-fluid {
   position: relative;

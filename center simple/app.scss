@@ -21,6 +21,7 @@ $max-header-item-width: 35rem;
 @import 'scss/helpers';
 @import 'scss/header';
 @import 'scss/content';
+@import 'scss/footer';
 
 html, body {
 	background: $primary-background-color;
@@ -36,6 +37,14 @@ a {
 		@include transition(0.2s, ease-in);
 		color: darken($secondary-font-color, 15);
 	}
+}
+
+p {
+	margin-bottom: 0;
+}
+
+img {
+	max-width: 100%;
 }
 
 .container, .container-fluid {
