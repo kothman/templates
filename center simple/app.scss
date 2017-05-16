@@ -48,11 +48,14 @@ img {
 }
 
 .container {
+	@media (min-width: $breakpoint) {
+		border-left: 1px solid $line-color;
+		border-right: 1px solid $line-color;
+		padding: 0 5rem;
+		box-shadow: 0px 4px 4px 0px $line-color;
+	}
 	background: $primary-background-color;
-	border-left: 1px solid $line-color;
-	border-right: 1px solid $line-color;
-	padding: 0 5rem;
-	    box-shadow: 0px 4px 4px 0px $line-color;
+	
 
 	&::after {
 	    /*content: ' ';
