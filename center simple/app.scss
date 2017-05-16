@@ -13,7 +13,7 @@ $line-color: darken(white, 15);
 
 $header-vertical-margin: 2rem;
 
-$breakpoint: 550px;
+$breakpoint: 750px;
 $screen-size: 80rem;
 
 $max-header-item-width: 35rem;
@@ -45,6 +45,24 @@ p {
 
 img {
 	max-width: 100%;
+}
+
+.container {
+	background: $primary-background-color;
+	border-left: 1px solid $line-color;
+	border-right: 1px solid $line-color;
+	padding: 0 5rem;
+	    box-shadow: 0px 4px 4px 0px $line-color;
+
+	&::after {
+	    /*content: ' ';
+	    height: 10px;
+	    width: 100%;
+	    position: absolute;
+	    margin-left: -4.99rem;
+	    background: white;
+	    z-index: 100;*/
+	}
 }
 
 .container, .container-fluid {

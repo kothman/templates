@@ -44,9 +44,9 @@ header {
 
 	.menu {
 		@media (min-width: $breakpoint) {
-			position: absolute;
-			top: 1rem;
-			right: 1rem;
+			//position: absolute;
+			//top: 1rem;
+			//right: 1rem;
 		}
 		
 		text-align: center;
@@ -63,8 +63,8 @@ header {
 				margin-right: auto;
 				padding: 0 1rem;
 				@media (min-width: $breakpoint) {
-					padding: 0;
-					display: block;
+					//padding: 0;
+					//display: block;
 				}
 				a {
 					border-bottom: 1px solid $line-color;

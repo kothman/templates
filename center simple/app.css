@@ -922,7 +922,7 @@ header {
     padding-top: .5rem;
     margin-bottom: 0;
     font-family: "Georgia", serif; }
-    @media (min-width: 550px) {
+    @media (min-width: 750px) {
       header .title {
         padding-top: 1.5rem;
         margin-bottom: 1rem; } }
@@ -940,18 +940,13 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -.75rem; }
-    @media (min-width: 550px) {
+    @media (min-width: 750px) {
       header .main {
         margin-bottom: -2rem; } }
   header .menu {
     text-align: center;
     margin-left: auto;
     margin-right: auto; }
-    @media (min-width: 550px) {
-      header .menu {
-        position: absolute;
-        top: 1rem;
-        right: 1rem; } }
     header .menu ul {
       list-style: none;
       text-align: inherit; }
@@ -962,10 +957,6 @@ header {
         margin-left: auto;
         margin-right: auto;
         padding: 0 1rem; }
-        @media (min-width: 550px) {
-          header .menu ul li {
-            padding: 0;
-            display: block; } }
         header .menu ul li a {
           border-bottom: 1px solid #d9d9d9;
           display: block; }
@@ -1006,6 +997,21 @@ p {
 
 img {
   max-width: 100%; }
+
+.container {
+  background: white;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  padding: 0 5rem;
+  box-shadow: 0px 4px 4px 0px #d9d9d9; }
+  .container::after {
+    /*content: ' ';
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    margin-left: -4.99rem;
+    background: white;
+    z-index: 100;*/ }
 
 .container, .container-fluid {
   position: relative;
