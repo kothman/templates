@@ -997,6 +997,11 @@ p {
 img {
   max-width: 100%; }
 
+input:not([type='submit']), textarea, select {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
 .container {
   background: white; }
   @media (min-width: 750px) {

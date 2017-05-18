@@ -47,6 +47,12 @@ img {
 	max-width: 100%;
 }
 
+input:not([type='submit']), textarea, select {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
 .container {
 	@media (min-width: $breakpoint) {
 		border-left: 1px solid $line-color;
