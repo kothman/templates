@@ -6,6 +6,7 @@
 	padding: 2rem;
 	box-shadow: $default-box-shadow;
 	margin-bottom: 2rem;
+	position: relative;
 
 	.image {
 		height: 30rem;
@@ -13,9 +14,40 @@
 		margin-bottom: 2rem;
 	}
 
+	.logo {
+
+		border-radius: 100%;
+		background-size: cover;
+		
+		position: absolute;
+		margin-bottom: 0;
+		background-color: $secondary-font-color-faded;
+
+		@media (min-width: $breakpoint) {
+			height: 2rem;
+			width: 2rem;
+
+			&.top-left {
+				top: 2rem;
+				right: 6rem;
+			}
+
+			&.top-right {
+				top: 2rem;
+				right: 2rem;
+			}
+
+			&.bottom-right {
+				top: 6rem;
+				right: 2rem;
+			}
+		}
+	}
+
 	.title {
 		font-size: 4rem;
 		margin-bottom: 0.5rem;
+		padding-right: 10rem;
 	}
 
 	.subtitle {

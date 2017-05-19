@@ -57,6 +57,12 @@ input:not([type='submit']), textarea, select {
 	height: auto;
 }
 
+.columns {
+	@media (max-width: $breakpoint) {
+		width: 100% !important;
+	}
+}
+
 .container {
 	@media (min-width: $breakpoint) {
 		border-left: 1px solid $line-color;
@@ -84,4 +90,9 @@ input:not([type='submit']), textarea, select {
 	margin-left: auto;
 	margin-right: auto;
 
+	&.large {
+		max-width: $screen-size * 2;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 }
