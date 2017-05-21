@@ -1010,7 +1010,9 @@ footer p {
     font-size: 2rem;
     color: #999999; }
   .card .read-more {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    background-color: rgba(30, 174, 219, 0.4);
+    border: 1px solid rgba(30, 174, 219, 0.4); }
   .card .summary {
     line-height: 2rem;
     font-size: 1.5rem; }
