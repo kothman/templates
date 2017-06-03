@@ -1,0 +1,15 @@
+.hero {
+    display: flex;
+
+    &.fullheight {
+        height: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,41 @@
+.sm {
+    @include not-xs {
+        display: none;
+    }
+}
+
+.md {
+    @include not-xs {
+        display: none;
+    }
+    @include not-sm {
+        display: none;
+    }
+}
+
+.lg {
+    @include not-xs {
+        display: none;
+    }
+    @include not-sm {
+        display: none;
+    }
+    @include not-md {
+        display: none;
+    }
+}
+
+.xl {
+    @include not-xs {
+        display: none;
+    }
+    @include not-sm {
+        display: none;
+    }
+    @include not-md {
+        display: none;
+    }
+    @include not-lg {
+        display: none;
+    }
+}
