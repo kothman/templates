@@ -1,6 +1,13 @@
 
 .title {
     text-align: center;
+    a {
+        text-decoration: unset;
+        color: unset;
+        &:hover {
+            color: unset;
+        }
+    }
 }
 .menu {
     text-align: center;
@@ -11,16 +18,6 @@
             display: inline-block;
         }
         font-size: 2rem;
-        a {
-            display: inline-block;
-            padding: 0 2rem;
-            color: $secondary-font-color;
-            @include transition;
-            &:hover {
-                @include transition;
-                color: darken($secondary-font-color, 10);
-                transform: translateY(-3px);
-            }
-        }
+        
     }
 }

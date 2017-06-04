@@ -74,7 +74,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem; }
+  padding: 0 2rem; }
+  @media (min-width: 750px) {
+    .hero {
+      padding: 2rem; } }
   .hero.fullheight {
     min-height: 100%; }
   .hero.halfheight {
@@ -92,6 +95,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
   text-align: center; }
+  .title a {
+    text-decoration: unset;
+    color: unset; }
+    .title a:hover {
+      color: unset; }
 
 .menu {
   text-align: center;
@@ -101,43 +109,75 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: 550px) {
       .menu .list-item {
         display: inline-block; } }
-    .menu .list-item a {
-      display: inline-block;
-      padding: 0 2rem;
-      color: #70738e;
-      transition: ease-in-out all 0.25s; }
-      .menu .list-item a:hover {
-        transition: ease-in-out all 0.25s;
-        color: #5a5c71;
-        transform: translateY(-3px); }
 
 .books {
   text-align: center;
   padding-left: 4rem;
-  padding-right: 4rem; }
+  padding-right: 4rem;
+  max-width: 100%; }
   .books .book {
     display: inline-block;
     max-width: 100%;
     width: 40rem;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-top-left-radius: 5px;
     text-align: center;
-    padding: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    background-color: transparent; }
+    @media (min-width: 750px) {
+      .books .book {
+        margin-left: 4rem;
+        margin-right: 4rem; } }
+    .books .book .image-container {
+      padding-left: 0;
+      padding-right: 0;
+      transform: unset; }
     .books .book .image {
-      width: 36rem;
-      margin-bottom: 2rem; }
+      max-width: 100%;
+      width: 100%;
+      border-top-left-radius: 5px; }
+    .books .book .text-container {
+      padding: 2rem 0;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      border-top: none;
+      background-color: white; }
+    .books .book .title {
+      font-weight: bold; }
     .books .book .button {
       padding-left: 1rem;
       padding-right: 1rem; }
+      .books .book .button.button-primary {
+        background-color: #8ce4ff;
+        border-color: #8ce4ff; }
       .books .book .button .fa {
         margin-left: .2rem; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%; }
 
 /**
  * Elements
  */
+body {
+  overflow: hidden;
+  background: #ebd1fe;
+  background: -moz-linear-gradient(-45deg, #ebd1fe 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(-45deg, #ebd1fe 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #ebd1fe 0%, #ffffff 100%); }
+
+a {
+  display: inline-block;
+  padding: 0 2rem;
+  color: #222;
+  transition: ease-in-out all 0.25s; }
+  a:hover {
+    transition: ease-in-out all 0.25s;
+    color: #a2a2a2;
+    transform: translateY(-3px); }
+
 /**
  * Import libraries last
  */

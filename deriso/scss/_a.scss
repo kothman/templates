@@ -1,0 +1,11 @@
+a {
+    display: inline-block;
+    padding: 0 2rem;
+    color: $primary-font-color;
+    @include transition;
+    &:hover {
+        @include transition;
+        color: lighten($primary-font-color, 50);
+        transform: translateY(-3px);
+    }
+}

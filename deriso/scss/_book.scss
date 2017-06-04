@@ -2,6 +2,7 @@
     text-align: center;
     padding-left: 4rem;
     padding-right: 4rem;
+    max-width: 100%;
     .book {
         $book-width: 40rem;
         $book-padding: 2rem;
@@ -9,30 +10,52 @@
         display: inline-block;
         max-width: 100%;
         width: $book-width;
-        border: 1px solid rgba(0,0,0,.25);
-        border-top-left-radius: 5px;
         text-align: center;
-        padding: 2rem;
-        margin-left: 4rem;
-        margin-right: 4rem;
         margin-bottom: 4rem;
+        background-color: transparent;
 
+        @include md {
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
+        .image-container {
+            padding-left: 0;
+            padding-right: 0;
+            transform: unset;
+        }
         .image {
-            width: $book-width - ( $book-padding * 2 );
-            margin-bottom: 2rem;
+            max-width: 100%;
+            width: 100%;
+            border-top-left-radius: 5px;
 
+            @include md {
+                //width: $book-width - ( $book-padding * 2 );
+            }
+        }
+
+        .text-container {
+            padding: 2rem 0;
+            border: 1px solid rgba(0,0,0,.25);
+            border-top: none;
+            background-color: white;
         }
 
         .title {
+            font-weight: bold;
         }
 
         .button-container {
-
         }
 
         .button {
             padding-left: 1rem;
             padding-right: 1rem;
+
+            &.button-primary {
+                background-color: #8ce4ff;
+                border-color: #8ce4ff;
+            }
+
             .fa {
                 margin-left: .2rem;
             }
