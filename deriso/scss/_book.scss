@@ -1,0 +1,41 @@
+.books {
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    .book {
+        $book-width: 40rem;
+        $book-padding: 2rem;
+
+        display: inline-block;
+        max-width: 100%;
+        width: $book-width;
+        border: 1px solid rgba(0,0,0,.25);
+        border-top-left-radius: 5px;
+        text-align: center;
+        padding: 2rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-bottom: 4rem;
+
+        .image {
+            width: $book-width - ( $book-padding * 2 );
+            margin-bottom: 2rem;
+
+        }
+
+        .title {
+        }
+
+        .button-container {
+
+        }
+
+        .button {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            .fa {
+                margin-left: .2rem;
+            }
+        }
+    }
+}

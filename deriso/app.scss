@@ -3,7 +3,22 @@
 @import 'scss/mixins';
 @import 'scss/modifiers';
 @import 'scss/reset';
-@import 'scss/hero';
-@import 'scss/header';
 
+/**
+ * Components
+ */
+@import 'scss/hero';
+@import 'scss/menu';
+@import 'scss/book';
+
+/**
+ * Elements
+ */
+@import 'scss/header';
+@import 'scss/footer';
+
+/**
+ * Import libraries last
+ */
 @import 'scss/skeleton';
+@import 'scss/font-awesome/scss/font-awesome.scss';

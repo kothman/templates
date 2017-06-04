@@ -1,3 +1,7 @@
+
+/**
+ * Helper classes to make elements visible only on certain larger screens.
+ */
 .sm {
     @include not-xs {
         display: none;
@@ -39,3 +43,26 @@
         display: none;
     }
 }
+
+/**
+ *
+ */
+ .padding {
+
+    &.none {
+        padding: 0;
+        &.top {
+
+        }
+        &.bottom {
+
+        }
+        &.left {
+
+        }
+        &.right {
+
+        }
+    }
+
+ }
