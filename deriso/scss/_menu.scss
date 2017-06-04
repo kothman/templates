@@ -14,10 +14,12 @@
     margin-bottom: 0;
 
     .list-item {
+        font-size: 2rem;
+
         @include sm {
             display: inline-block;
         }
-        font-size: 2rem;
-        
     }
+
+
 }
