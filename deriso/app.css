@@ -161,7 +161,17 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Elements
  */
+footer {
+  text-align: center;
+  margin: 0 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05); }
+  footer p:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+
 body {
+  color: #222;
   overflow: hidden;
   background: #ebd1fe;
   background: -moz-linear-gradient(-45deg, #ebd1fe 0%, #ffffff 100%);
